@@ -1,0 +1,341 @@
+Attribute VB_Name = "MAIN"
+' main.txt - global definitions
+Type T1E0F
+  M1E1E As String * 20
+  M1E25 As Integer
+  M1E32 As Integer
+  M1E40 As String * 15
+  M1E4B As String * 13
+  M1E57 As Integer
+  M1E5E As Integer
+  M1E65 As Integer
+  M1E6F As Integer
+  M1E78 As Integer
+  M1E7F As Integer
+  M1E86 As Long
+  M1E90 As Long
+  M1E9A As Integer
+  M1EA3 As Integer
+  M1EAC As Integer
+  M1EB8 As Integer
+  M1EC2 As Integer
+  M1ECC As Long
+  M1EDA As Integer
+  M1EE1 As String * 4
+End Type
+
+Type T1EEE
+  M1E1E As String * 15
+  M1EFF As Integer
+  M1F0B As Integer
+  M1F16 As Integer
+  M1F21 As Long
+  M1F2B As Long
+  M1F35 As Integer
+End Type
+
+Type T1F42
+  M1E1E As String * 14
+  M1F50 As String * 1
+  M1F5D As Integer
+  M1EA3 As Integer
+  M1ECC As Long
+  M1F67 As Integer
+  M1F72 As Integer
+  M1F7E As Integer
+  M1F8B As Long
+  M1F99 As Long
+  M1FA8 As Long
+End Type
+
+Type T1FB8
+  M1E1E As String * 14
+  M1F8B As Long
+  M1F99 As Long
+  M1FA8 As Long
+End Type
+
+Global gv01EC As String
+Global gv01F4 As Integer
+Global gv01F6 As Integer
+Global AppDir As String
+Global AppResc As String
+Global AppData As String
+Global gv0200 As Integer
+Global gv0202 As Integer
+Global gv0204 As Integer
+Global gv0206 As Integer
+Global gv0208 As Single
+Global gv020C As Single
+Global gv0210 As Integer
+Global gv0212 As Integer
+Global gv0214 As String
+Global gv0218() As Long
+Global gv024A As Integer
+Global gv024E As Integer
+Global gv0250 As Integer
+Global gv0252 As Integer
+Global gv0254 As Integer
+Global gv0256 As Integer
+Global gv0258 As Long
+Global gv025C As Integer
+Global gv0260() As T1E0F
+Global gv0294() As T1EEE
+Global gv02C6 As Integer
+Global gv02C8 As Integer
+Global gv02CA As Integer
+Global gv02CC As Integer
+Global gv02CE As Integer
+Global gv02D0 As Integer
+Global gv02D2 As Integer
+Global gv02D6() As T1F42
+Global gv0308 As Integer
+Global gv030A As Integer
+Global gv030C As Integer
+Global gv030E() As Integer
+Global gv0340() As Integer
+Global gv0372() As Integer
+Global gv03A4 As Integer
+Global gv03A6 As Integer
+Global gv03A8 As Integer
+Global gv03AA As Integer
+Global gv03AC As Integer
+Global gv03AE() As Integer
+Global gv03E2 As Integer
+Global gv03E6() As String
+Global gv0418() As String
+Global gv044A As Integer
+Global gv044C As Integer
+Global gv044E() As Integer
+Global gv0482 As Integer
+Global gv0484() As Integer
+Global gv04B6() As Integer
+Global gv04E8 As Long
+Global gv04EC As Long
+Global gv04F0 As Long
+Global gv04F4 As Long
+Global gv04F8 As Long
+Global gv04FC As Long
+Global gv0500 As Long
+Global gv0504 As Long
+Global gv0518 As Integer
+Global gv051A As Integer
+Global gv051C As Integer
+Global gv051E As Integer
+Global gv0520 As Integer
+Global gv0522() As Integer
+Global gv0554 As Integer
+Global gv0556 As Integer
+Global gv0558 As Integer
+Global gv055A As Integer
+Global gv055C As Integer
+Global gv0562() As Integer
+Global gv0594 As Integer
+Global gv0596 As Integer
+Global gv0598 As Integer
+Global gv059A As Integer
+Global gv059C As Integer
+Global gv05A0 As Integer
+Global gv05A2 As Integer
+Global gv05A4 As Long
+Global gv05DC As Integer
+Global gv05DE() As String
+Type T2762
+  M2775 As String * 15
+  M2780 As String * 15
+  M2787 As String * 100
+  M2796 As String * 12
+  M27A2 As Integer
+  M27AD As Integer
+  M27B8 As Integer
+  M1EA3 As Integer
+  M27C3 As String * 10
+  M1EE1 As String * 100
+End Type
+
+Type T27CD
+  M27DE As String * 20
+  M1EE1 As String * 200
+End Type
+
+Global gv0690 As Integer
+Global gv0692 As Integer
+Global gv0694 As Integer
+Global gv0696 As String
+Global gv069A As String
+Global gv069E As Integer
+Global gv06A0 As String
+Global gv06A4 As String
+Global gv06A8 As String
+Global gv06AC As String
+Global gv06B0 As String
+Global gv06B4 As Integer
+Global gv06B6 As String
+Global gv06BA As Integer
+Global gv06BC As Integer
+Global gv06BE As Integer
+Global gv06C0 As Integer
+Global gv06C6 As Integer
+Global gv06C8 As Integer
+Global gv06CA As String
+Global gv06CE As Integer
+Global gv06D0 As Integer
+Global gv06D2() As Integer
+Global TrialDays As String
+Global gv0708 As String
+Global gv070C As String
+Global gv0710 As Integer
+Global gv0712 As Integer
+Global gv0714 As Integer
+Global gv0716 As Integer
+Global gv0718 As Integer
+Global gv071A As Integer
+Global gv071C As String
+Global gv0720 As Integer
+Global gv0722 As String
+Global gv0726 As Integer
+Global gv0728
+Global gv0734 As Integer
+Global gv0736 As Integer
+Global gv0738 As Integer
+Global gv073A() As Integer
+Global gv076C As Integer
+Global gv076E As Integer
+Global gv0770 As Integer
+Global gv0772() As Integer
+Global gv07A8 As Integer
+Global gv07AA As Integer
+Global gv07AC As Integer
+Global gv07AE As Integer
+Global gv07B0 As String
+Global gv07B4 As Integer
+Global gv07B6 As Integer
+Global gv07B8 As Integer
+Global gv07BC As String
+Global gv07C0 As Integer
+Global gv07C2 As Integer
+Global gv07C4 As Integer
+Global gv07C6 As Integer
+Global gv07C8 As Integer
+Global gv07CA As Integer
+Global gv07CC As Integer
+Global gv07CE As String
+Global gv07D2 As String
+Global gv07D6 As Integer
+Global gv07D8 As Integer
+Global gv07DA As Integer
+Global gv07DC As Integer
+Global gv07DE As Integer
+Global Const gc07E0 = "World Empire IV Version 3.0"
+Global Const gc07E4 = "~!"
+Global Const gc07E8 = "~@~@"
+Global Const gc07EC = "WEMPIRE41.0:"
+Global Const gc07F0 = "WE4LOGON"
+Global Const gc07F4 = "WE4_TEXT"
+Global Const gc07F8 = "WE4_PTXT"
+Global Const gc07FC = "WE4_SYST"
+Global Const gc0800 = "WE4_WHON"
+Global Const gc0804 = "WE4_SPIC"
+Global Const gc0808 = "WE4_UPIC"
+Global Const gc080C = "WE4_EPIC"
+Global Const gc0810 = "WE4_USUC"
+Global Const gc0814 = "WE4_UFAI"
+Global Const gc0818 = "WE4_UABR"
+Global Const gc081C = "WE4_RING"
+Global Const gc0820 = "WE4_ENTR"
+Global Const gc0824 = "WE4_LOGW"
+Global Const gc0828 = "WE4_CONF"
+Global Const gc082C = "WE4_REST"
+Global Const gc0830 = "WE4_RES2"
+Global Const gc0834 = "WE4_PSTA"
+Global Const gc0838 = "WE4_PASS"
+Global Const gc083C = "WE4_PASI"
+Global Const gc0840 = "WE4_THIN"
+Global Const gc0844 = "WE4_ATAC"
+Global Const gc0848 = "WE4_SUCC"
+Global Const gc084C = "WE4_WITH"
+Global Const gc0850 = "WE4_TRAN"
+Global Const gc0854 = "WE4_OCCU"
+Global Const gc0858 = "WE4_ASSI"
+Global Const gc085C = "WE4_IDEA"
+Global Const gc0860 = "WE4_RADD"
+Global Const gc0864 = "WE4_SADD"
+Global Const gc0868 = "WE4_DESC"
+Global Const gc086C = "WE4_LIST"
+Global Const gc0870 = "WE4_SURR"
+Global Const gc0874 = "WE4_WINR"
+Global Const gc0878 = "WE4_CNCT"
+Global Const gc0886 = "h"
+Global Const gc088A = "c"
+Global Const gc088E = "r"
+Global gv0894() As T2762
+Global gv0B06 As String
+Global gv0B0A As Integer
+Global gv0B0C() As String
+
+' Used in GetObject parameter 3
+Type T2FD8
+  M2FE2 As Integer
+  M2FEC As Integer
+  M2FF7 As Integer
+  M3003 As Integer
+  M3013 As String * 1
+  M301F As String * 1
+  M302E As String * 4
+End Type
+
+Type T3038
+  M3040 As Integer
+  M3048 As Integer
+  M304F As Integer
+  M3058 As Integer
+End Type
+
+Type T30B4
+  M30C4 As Single
+  M30D2 As Single
+  M30DF As Integer
+  M30EB As Integer
+  M30F9 As Integer
+  M310A As String * 50
+  M3116 As Single
+  M3122 As Long
+  M312F As Integer
+End Type
+
+Type T313B
+  M3148 As Single
+  M314E As Single
+  M3154 As Single
+  M315A As Single
+  M3160 As Single
+  M316B As Single
+  M3176 As Integer
+  M3182 As String * 400
+End Type
+
+Global gv0C7E As Integer
+Global gv0C80 As Integer
+Global gv0C82 As Integer
+Global gv0C84 As String
+Global gv0C88 As String
+Global gv0C8C As String
+Global gv0C90 As String
+Global gv0C94 As String
+Global gv0C98 As Integer
+Global gv0C9A As String
+Type T32E2
+  M32EE As Integer
+  M32FB As Integer
+  M3303 As Integer
+  M27AD As Long
+  M330E As String
+  M331D As String
+  M3329 As String
+  M332F As String
+  M3337 As Integer
+  M333C(1000) As String
+End Type
+
+Global gv0D1E As T32E2
+
